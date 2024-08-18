@@ -1,10 +1,35 @@
-# React + Vite
+# My React + Vite Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This is a three-page website built with React and Vite. The project includes the following features:
+- User signup
+- User login
+- Products list
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
---
+- **Signup Page**: Allows users to create an account.
+- **Login Page**: Users can log in with their credentials.
+- **Products List**: Displays a list of products.
+
+## Technologies Used
+
+- **React**: A JavaScript library for building user interfaces.
+- **Vite**: A fast build tool and development server.
+- **React Router**: For routing between different pages.
+- **Axios** (optional): For making HTTP requests.
+
+## Installation
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/sKush-1/Assignment-ecommerce.git
+   cd Assignment-ecommerce
+   npm install
+   npm run dev
+
+2.**Deployement**
+  visit link - https://assignment-ecommerce-git-main-sumits-projects-54f4496b.vercel.app/
+
