@@ -1,9 +1,24 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Navbar from "../components/Navbar"
 import { jwtDecode } from 'jwt-decode';
 
 const Home = () => {
-  const user = jwtDecode(localStorage.getItem('token'));
+  const [user, setUser] = useState()
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const token = localStorage.getItem('token');
+      if (token) {
+        try {
+          const storedData = jwtDecode(token);
+          setUser(storedData);
+        } catch (error) {
+          console.error('Invalid token', error);
+          localStorage.removeItem('token');
+        }
+      }
+    }
+  }, []);
 
   return (
     <div>
